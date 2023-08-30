@@ -14,4 +14,4 @@ RUN pip install Flask scikit-learn
 EXPOSE 8000
 
 # Commande pour démarrer l'application
-CMD ["gunicorn", "--bind", "https://biregovr.onrender.com:8000", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
