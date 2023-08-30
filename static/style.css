@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    font-family: 'Black Ops One', cursive;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#chat-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-output {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+#user-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.dark-mode {
+    background-color: #111;
+    color: #f0f0f0;
+}
+
+.dark-mode h1 {
+    color: #f0f0f0;
+}
+
+.dark-mode #chat-container {
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode #chat-output {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode #user-input {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+.dark-mode button {
+    background-color: #555;
+}
+
+#user-icon,
+#assistant-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#user-icon {
+    color: #3b82f6;
+}
+
+#assistant-icon {
+    color: #fbbf24;
+}
+
+#mountain-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
