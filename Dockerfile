@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install Flask scikit-learn
 
 # Exposez le port sur lequel l'application Flask écoute
-EXPOSE 5000
+EXPOSE 8000
 
 # Commande pour démarrer l'application
-CMD ["python", "app.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
