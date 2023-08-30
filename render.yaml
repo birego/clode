@@ -1,0 +1,5 @@
+render:
+  - name: your-app-name
+    type: service
+    dockerfile: Dockerfile
+    buildCommand: pip install -r requirements.txt
