@@ -1,5 +1,5 @@
 render:
-  - name: your-app-name
+  - name: biregovr
     type: service
     dockerfile: Dockerfile
     buildCommand: pip install -r requirements.txt

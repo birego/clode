@@ -1,18 +1,12 @@
 # Utilisez une image Python officielle comme base
-FROM python:3.8-slim
+FROM python:3.8-alpine
 
-# Définissez le répertoire de travail dans le conteneur
+COPY requirements.txt /app/requirements.txt
 WORKDIR /app
-
-# Copiez le fichier requirements.txt et installez les dépendances
-COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-# Copiez tous les fichiers de votre application dans le conteneur
-COPY . .
+COPY . /app/
 
-# Exposez le port sur lequel votre application Flask écoute
-EXPOSE 5000
+ENTRYPOINT [ "python" ]
 
-# Commande pour démarrer l'application
-CMD ["python", "app.py"]
+CMD [ "view.py" ]
